@@ -28,7 +28,7 @@ on_buttonModif_clicked                 (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_buttonSupprimer_clicked             (GtkButton       *button,
+on_buttonSupprimer_clicked             (GtkWidget       *objet,
                                         gpointer         user_data);
 
 void
@@ -54,4 +54,59 @@ on_medcin_clicked                      (GtkButton       *button,
 
 void
 on_ets_clicked                         (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_supprimerRdv_clicked                (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_historique_clicked                  (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+
+void
+on_button42_clicked                    (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_anuller1_clicked                    (GtkWidget      *objet,
+                                        gpointer         user_data);
+
+void
+on_retour1_clicked                     (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_checkbutton5_toggled                (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_modif1_clicked                      (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_retour3_clicked                     (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_treeview2_row_activated             (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data);
+
+void
+on_buttonafficherr_clicked             (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_Anuller11_clicked                   (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_button43_clicked                    (GtkWidget       *objet,
+                                        gpointer         user_data);
+
+void
+on_modif11_clicked                     (GtkWidget       *objet,
                                         gpointer         user_data);

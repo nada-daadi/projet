@@ -100,8 +100,7 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_projet_c_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) \
-	interface.$(OBJEXT) callbacks.$(OBJEXT) RDV.$(OBJEXT) \
-	entite.$(OBJEXT)
+	interface.$(OBJEXT) callbacks.$(OBJEXT) RDV.$(OBJEXT)
 projet_c_OBJECTS = $(am_projet_c_OBJECTS)
 am__DEPENDENCIES_1 =
 projet_c_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -283,8 +282,7 @@ projet_c_SOURCES = \
 	support.c support.h \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
-	RDV.c RDV.h \
-	entite.c entite.h
+	RDV.c RDV.h 
 
 projet_c_LDADD = -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype $(INTLLIBS)
 all: all-am
@@ -375,7 +373,6 @@ distclean-compile:
 
 include ./$(DEPDIR)/RDV.Po
 include ./$(DEPDIR)/callbacks.Po
-include ./$(DEPDIR)/entite.Po
 include ./$(DEPDIR)/interface.Po
 include ./$(DEPDIR)/main.Po
 include ./$(DEPDIR)/support.Po

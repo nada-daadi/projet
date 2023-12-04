@@ -100,8 +100,7 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_projet_c_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) \
-	interface.$(OBJEXT) callbacks.$(OBJEXT) RDV.$(OBJEXT) \
-	entite.$(OBJEXT)
+	interface.$(OBJEXT) callbacks.$(OBJEXT) RDV.$(OBJEXT)
 projet_c_OBJECTS = $(am_projet_c_OBJECTS)
 am__DEPENDENCIES_1 =
 projet_c_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -283,8 +282,7 @@ projet_c_SOURCES = \
 	support.c support.h \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
-	RDV.c RDV.h \
-	entite.c entite.h
+	RDV.c RDV.h 
 
 projet_c_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 all: all-am
@@ -375,7 +373,6 @@ distclean-compile:
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/RDV.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/callbacks.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/entite.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/interface.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/support.Po@am__quote@

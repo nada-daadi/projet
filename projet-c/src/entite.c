@@ -4,12 +4,12 @@
 
 #define TAILLE_MAX_LIGNE 100
 
-void historique(char nomFichier[], char CIN[]) {
+void historique(GtkWidget *list, int CIN) {
     FILE *fichierDonnees;
     FILE *fichierHistorique;
     char ligne[TAILLE_MAX_LIGNE];
 
-    fichierDonnees = fopen(nomFichier, "r"); 
+    fichierDonnees = fopen("RDV.txt", "r"); 
 
     if (fichierDonnees == NULL) {
         printf("Erreur : Impossible d'ouvrir le fichier de donnees.\n");

@@ -30,3 +30,4 @@ GtkWidget* create_ajout_Avec_Sucsess (void);
 GtkWidget* create_echec (void);
 GtkWidget* create_aceuil (void);
 GtkWidget* create_window_donneur (void);
+GtkWidget* create_modifRDV (void);
